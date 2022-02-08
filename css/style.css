@@ -1,0 +1,203 @@
+I denna mapp placeras css-dokument.
+
+/*Mobil*/
+
+/* Hemsida*/
+
+/* Sida1*/
+
+/* Sida2*/
+
+/* Sida3*/
+
+
+/*Helskärm(Dator)*/
+
+/* Hemsida*/
+
+/* Sida1*/
+
+/* Sida1*/
+
+/* Sida2*/
+
+/* Sida3*/
+
+
+
+
+
+/*body,ul{
+    margin: 0;
+}
+*/
+
+
+body{
+    background-color: lightskyblue
+    margin: 50px;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: turquoise;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+
+.show{
+    left: 0vw;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-botton i.material-icons{
+    font-size: 2.5rem;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    
+main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "ft ft"
+    ;
+}
+
+
+#hd{
+    grid-area: hd;
+    background-color:black;
+    color: pink; 
+}
+
+#nv{
+    grid-area: nv;
+    background-color:palevioletred;
+}
+
+#ac{
+    grid-area: ac;
+    background-color:hotpink;
+
+}
+
+#ft{
+    grid-area: ft;
+    background-color:lightpink;
+}
+
+
+p{
+    margin: 0;
+    color: white;
+    padding: 50px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* telefon */
+@media screen and (max-width: 1024px){
+
+.menu-botton{
+    position: fixed;
+    top: 0;
+    left: 10;
+    right: 15;
+    bottom: 0;
+    background-color:white;
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    display: block;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "ft ft"
+    ;
+}
+
+#hd{
+    grid-area: hd;
+    background-color:black;
+}
+
+#nv{
+    grid-area: nv;
+    background-color:paleturquoise;
+}
+
+#ac{
+    grid-area: ac;
+    background-color:lightcyan;
+
+}
+
+#ft{
+    grid-area: ft;
+    background-color:rgb(0, 255, 221);
+}
+
+
+p{
+margin: 0;
+color: white;
+padding: 50px;
+}
+
+}
