@@ -1,3 +1,4 @@
+
 I denna mapp placeras css-dokument.
 
 /*Mobil*/
@@ -24,18 +25,457 @@ I denna mapp placeras css-dokument.
 /* Sida3*/
 
 
-
-
-
 /*body,ul{
     margin: 0;
 }
 */
 
 
+
+
 body{
+    background-color: white
+    margin: 50px;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.show{
+    left: 0vw;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-botton i.material-icons{
+    font-size: 2.5rem;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    
+main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "ft ft"
+    ;
+}
+
+
+#hd{
+    grid-area: hd;
+    background-color:black;
+    display: flex; align-items: center; 
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
+
+}
+
+#nv{
+    grid-area: nv;
+    background-color:palevioletred;
+    display: flex; align-items: center; 
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#ac{
+    grid-area: ac;
+    background-color:hotpink;
+
+}
+
+#ft{
+    grid-area: ft;
+    background-color:lightpink;
+    
+    display: flex; align-items: center; 
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+            
+  #body #Logga{
+    width: 1rem;
+    }
+  #body #makerspaceb{
+    width: 200rem;
+  }
+
+  #body #instagram{
+    width: 3rem;
+  }
+    
+  #body #facebook{
+    width: 3rem;
+  }
+
+  #body p{
+    margin: 0;
+    color: white;
+    padding: 50px;
+} 
+
+
+}
+
+
+
+
+/* telefon */
+@media screen and (max-width: 1024px){
+
+.menu-botton{
+    position: fixed;
+    top: 0;
+    left: 10;
+    right: 15;
+    bottom: 0;
+    background-color:white;
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    display: block;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "ft ft"
+    ;
+}
+
+#hd{
+    grid-area: hd;
+    display: flex; align-items: center; 
+    justify-items: center;
+    flex-direction: column;
+}
+
+#nv{
+    grid-area: nv;
+    display: flex; align-items: center; 
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#ac{
+    grid-area: ac;
+    background-color: black;
+}
+
+
+#ft{
+    grid-area: ft;
+    background-color:white;
+    display: flex; align-items: center; 
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+#body #Logga{
+    width: 1rem;
+}
+
+#body #makerspaceb{
+    width: 200rem;
+  }
+
+#body #instagram{
+    width: 1rem;
+  }
+    
+#body #facebook{
+    width: 1rem;
+  }
+
+
+#body p{
+margin: 0;
+color: white;
+padding: 50px;
+}
+
+}
+
+
+
+
+
+
+
+
+/* body2*/
+
+#body2{
+    background-color: white
+    margin: 50px;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+
+.show{
+    left: 0vw;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-botton i.material-icons{
+    font-size: 2.5rem;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    
+main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "sc sc"
+    "ft ft"
+    ;
+}
+
+
+#body2 #hd{
+    grid-area: hd;
+    background-color:black;
+    color: pink; 
+}
+
+#body2 #nv{
+    grid-area: nv;
+    background-color:palevioletred;
+}
+
+#body2 #ac{
+    grid-area: ac;
+    background-color:hotpink;
+
+    background-image: url(..img/MSLogga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#body2 #sc{
+    grid-area: sc;
+    background-color:hotpink;
+    background-image: url(..img/makerspaceb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    
+
+#body2 #ft{
+    grid-area: ft;
+    background-color:lightpink;
+}
+
+
+#body2 #p{
+    margin: 0;
+    color: white;
+    padding: 50px;
+    }
+
+    
+    #Logga{
+        width: 1rem;
+    }
+    #makerspaceb{
+        width: 20rem;
+      }
+
+    #instagram{
+        width: 3rem;
+      }
+        
+    #facebook{
+        width: 3rem;
+      }
+} 
+
+
+
+
+
+
+/* telefon */
+@media screen and (max-width: 1024px){
+
+.menu-botton{
+    position: fixed;
+    top: 0;
+    left: 10;
+    right: 15;
+    bottom: 0;
+    background-color:white;
+    display: none;
+    z-index: 5;
+}
+
+.menu-botton{
+    display: block;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ac ac"
+    "ft ft"
+    ;
+}
+
+#body2 #hd{
+    grid-area: hd;
+    background-color:black;
+}
+
+#body2 #nv{
+    grid-area: nv;
+    background-color:paleturquoise;
+}
+
+#body2 #ac{
+    grid-area: ac;
+    background-color:lightcyan;
+
+    background-image: url(..img/makerspaceb.png));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#body2 #ft{
+    grid-area: ft;
+    background-color:black;
+}
+
+
+#body2 p{
+margin: 0;
+color: white;
+padding: 50px;
+}
+
+
+#Logga{
+    width:1rem;
+}
+#makerspaceb{
+    width: 20rem;
+  }
+
+#instagram{
+    width: 3rem;
+  }
+    
+#facebook{
+    width: 3rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body3*/
+
+#body3{
     background-color: lightskyblue
     margin: 50px;
+    background-image: url(..img/MSLogga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .menu{
@@ -95,48 +535,60 @@ main{
 }
 
 
-#hd{
+#body3 #hd{
     grid-area: hd;
     background-color:black;
     color: pink; 
 }
 
-#nv{
+#body3 #nv{
     grid-area: nv;
     background-color:palevioletred;
 }
 
-#ac{
+#body3 #ac{
     grid-area: ac;
     background-color:hotpink;
 
 }
 
-#ft{
+#body3 #ft{
     grid-area: ft;
     background-color:lightpink;
+
+    
+    background-image: url(..img/kartaicon.png));
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-p{
+#body3 #p{
     margin: 0;
     color: white;
     padding: 50px;
     }
+
+    #Logga{
+        width:1rem;
+    }
+    #makerspaceb{
+        width: 200rem;
+      }
+    
+      
+    #instagram{
+        width: 3rem;
+      }
+        
+    #facebook{
+        width: 3rem;
+      }
+
+ #karta{
+        width: 3rem;
+    }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,32 +624,55 @@ p{
     ;
 }
 
-#hd{
+#body3 #hd{
     grid-area: hd;
     background-color:black;
+
+    background-image: url(..img/nti.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#nv{
+#body3 #nv{
     grid-area: nv;
     background-color:paleturquoise;
 }
 
-#ac{
+#body3 #ac{
     grid-area: ac;
     background-color:lightcyan;
-
 }
 
-#ft{
+#body3 #ft{
     grid-area: ft;
     background-color:rgb(0, 255, 221);
 }
 
 
-p{
+#body3 p{
 margin: 0;
 color: white;
 padding: 50px;
+}
+
+#Logga{
+    width:1rem;
+}
+#makerspaceb{
+    width: 200rem;
+  }
+
+  
+#instagram{
+    width: 3rem;
+  }
+    
+#facebook{
+    width: 3rem;
+  }
+
+#karta{
+    width: 3rem;
 }
 
 }
