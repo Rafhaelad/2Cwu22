@@ -32,7 +32,6 @@ I denna mapp placeras css-dokument.
 
 
 
-
 body{
     background-color: white
     margin: 50px;
@@ -100,8 +99,7 @@ main{
     display: flex; align-items: center; 
     justify-content: space-around;
     justify-items: center;
-    flex-direction: column;
-
+    flex-direction: column
 }
 
 #nv{
@@ -116,33 +114,32 @@ main{
 #ac{
     grid-area: ac;
     background-color:hotpink;
-
 }
 
 #ft{
     grid-area: ft;
     background-color:lightpink;
-    
     display: flex; align-items: center; 
     justify-items: center;
     flex-direction: column;
 }
 
-
-            
-  #body #Logga{
+  #body #karta{
+      width: 1rem;
+  }          
+  #Logga{
     width: 1rem;
     }
   #body #makerspaceb{
-    width: 200rem;
+    width: 20rem;
   }
 
   #body #instagram{
-    width: 3rem;
+    width: 1rem;
   }
     
   #body #facebook{
-    width: 3rem;
+    width: 1px;
   }
 
   #body p{
@@ -150,8 +147,6 @@ main{
     color: white;
     padding: 50px;
 } 
-
-
 }
 
 
@@ -216,6 +211,10 @@ main{
 }
 
 
+#body #karta{
+    width: 1rem;
+}
+
 #body #Logga{
     width: 1rem;
 }
@@ -225,11 +224,12 @@ main{
   }
 
 #body #instagram{
-    width: 1rem;
+    width: 1px;
+    height: 1px;
   }
     
 #body #facebook{
-    width: 1rem;
+    width: 10px;
   }
 
 
@@ -348,28 +348,27 @@ main{
     background-color:lightpink;
 }
 
+ 
+#Logga{
+    width: 1rem;
+}
+#makerspaceb{
+    width: 20rem;
+  }
+
+#instagram{
+    width: 1rem;
+  }
+    
+#facebook{
+    width: 1rem;
+  }
 
 #body2 #p{
     margin: 0;
     color: white;
     padding: 50px;
-    }
-
-    
-    #Logga{
-        width: 1rem;
-    }
-    #makerspaceb{
-        width: 20rem;
-      }
-
-    #instagram{
-        width: 3rem;
-      }
-        
-    #facebook{
-        width: 3rem;
-      }
+    }   
 } 
 
 
@@ -439,7 +438,7 @@ padding: 50px;
 
 
 #Logga{
-    width:1rem;
+    width: 1rem;
 }
 #makerspaceb{
     width: 20rem;
@@ -563,31 +562,33 @@ main{
 }
 
 
+
+#Logga{
+    width: 1rem;
+}
+#makerspaceb{
+    width: 200rem;
+  }
+
+  
+#instagram{
+    width: 3rem;
+  }
+    
+#facebook{
+    width: 3rem;
+  }
+
+#karta{
+    width: 3rem;
+}
 #body3 #p{
     margin: 0;
     color: white;
     padding: 50px;
     }
 
-    #Logga{
-        width:1rem;
-    }
-    #makerspaceb{
-        width: 200rem;
-      }
-    
-      
-    #instagram{
-        width: 3rem;
-      }
-        
-    #facebook{
-        width: 3rem;
-      }
-
- #karta{
-        width: 3rem;
-    }
+  
 } 
 
 
@@ -648,15 +649,8 @@ main{
     background-color:rgb(0, 255, 221);
 }
 
-
-#body3 p{
-margin: 0;
-color: white;
-padding: 50px;
-}
-
 #Logga{
-    width:1rem;
+    width: 1rem;
 }
 #makerspaceb{
     width: 200rem;
@@ -674,5 +668,11 @@ padding: 50px;
 #karta{
     width: 3rem;
 }
+
+#body3 p{
+    margin: 0;
+    color: white;
+    padding: 50px;
+    }
 
 }
