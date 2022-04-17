@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-    <header>
-    </header>
-
+<body id=body1>
+    <div class="menu-botton">
+        <i class="material-icons">menu</i>
+    </div>
     <nav class="menu">
         <ul>
             <li><a href="index.html">Hemsida</a></li>
@@ -23,47 +22,74 @@
             <li><a href="sida4.html">Item 4</a></li>
         </ul>
     </nav>
-
-
-
     <div class="fade-layer"></div>
+
+
     <div class="wrapper">
-        <div class="menu-botton">
-            <i class="material-icons">menu</i>
-        </div>
         <main>
-            <header id=hd> <img src="img/MSLogga.png" alt="LOGGA" class="Logga"></header>
-            <nav id=nv> <img src="img/makerspaceb.png" alt="Makerspace" class="makerspaceb"></nav>
-            <article id="ac">
-                <h3>
-                    <p>
+            <header id="hd">
+                <span><a href="index.html"><img src="img/MSLogga.png" alt="logga" class=Logga></a></span>
+            </header>
+
+            <nav id="nv">
+                <h1><span style="color:hotpink;"> VÄLKOMMEN TILL NTI JOHANNEBERG´S MAKERSPACE KLUBBEN!</span></h1>
+            </nav>
+            <section id="sc">
+                <img src="img/makerspaceb.png" alt="Makerspace" id="makerspaceb">
+                <h3><span style="color: black;">
                         Här umgås vi som älskar att programmera, designa, konstruera
                         och skapa med hjälp av 3D-skrivare, laserskärare, vinylskärare, tryckpress och andra verktyg.
+                    </span></h3>
+
+                <h3><span style="color: black;">
                         Vill du lära dig mer om 3D-printing och t.ex. kanske bygga en grej, är detta klubben för dig!
                         Vi skapar, umgås och underhåller skolans Makerspace och har en liten budget för inköp
-                        och andra saker vi vill hitta på. Välkommen hit!</p>
-                </h3>
+                        och andra saker vi vill hitta på.
+                    </span></h3>
+
+                <h2><span style="color:deeppink;">
+                        Välkommen hit!
+                    </span></h2>
+            </section>
+
+
+            <article id="ac">
+                <h2> <span style="color:dodgerblue;"> Utforska dina ideer! Gör ditt eget projekt!</span></h2>
+                <h4>Vi har massor av saker du kan göra bland annat: symaskin, flera olika 3D printare, VR-rum nära
+                    makerspace och mycket mer!</h4>
+                <section><img src="img/symak.png" alt="symaskin" id="ps">
+                </section>
+                <section><img src="img/robot.png" alt="robot" id="robot">
+                </section>
+                <section><img src="img/ps.png" alt="Playstation" id="sy">
+                </section>
             </article>
 
-            <footer id=ft>
-                <h1><span style="color: royalblue;"> <strong> Kontakta oss:</strong></span></h1>
-                <h5><span style="color: black;"><strong>Telefonnummer: 0724739343</strong></span></h5>
-                <h5><span style="color: black;"><strong> Email: makerspace.johanneberg@gmail.com </strong></span></h5>
-                </a>
-                <h3><span style="color: royalblue;"><strong> <a style="color: black;"
-                                href="https://www.instagram.com/ntijohanneberg/?hl=sv"> Sociala medier: </strong>
-                    </span></h3> <img src="img/instagram.png" class=instagram>
-                <a style="color: black;" href="https://www.facebook.com/ntijohanneberg/"><img src="img/Facebook.png"
-                        class=facebook> </a>
-                <h3><span style="color: royalblue;"><strong> <a style="color: black;"
-                                href="https://www.google.com/maps/place/NTI+Gymnasiet+Johanneberg/@57.6905167,11.9747806,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff30cb0e6c031:0x512e1a3cb4192a9!8m2!3d57.6905156!4d11.9747733">
-                                Adress: Origovägen 4, 412 58 Göteborg </strong>
-                    </span></h3><img src="img/kartaicon.png" class=karta>
+
+            <footer id="ft">
+                <section>
+                    <h1 style="color: royalblue;"> <strong> KONTAKTA OSS:</strong></h1>
+                    <h4 style="color:black;"><strong>Telefonnummer: 0724739343</strong></h4>
+                    <h4 style="color: black;"><strong> Email: makerspace.johanneberg@gmail.com </strong>
+                    </h4>
+                </section>
+
+                <h2 style="color: black;"><strong>Sociala medier:</strong></h2>
+                <span><a href="https://www.instagram.com/ntijohanneberg/?hl=sv">
+                        <img src="img/instagram.png" alt="instagram" class=instagram>
+                    </a>
+                </span>
+                <span><a href="https://www.facebook.com/ntijohanneberg/"><img src="img/Facebook.png" alt="facebook"
+                            class=facebook></a></span>
+
+                <span><a
+                        href="https://www.google.com/maps/place/NTI+Gymnasiet+Johanneberg/@57.6905167,11.9747806,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff30cb0e6c031:0x512e1a3cb4192a9!8m2!3d57.6905156!4d11.9747733"><img
+                            src="img/kartaicon.png" alt="karta" class=map></span>
+                <h3 style="color: black;"><strong> Adress: Origovägen 4, 412 58 Göteborg </strong></h3>
             </footer>
         </main>
     </div>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

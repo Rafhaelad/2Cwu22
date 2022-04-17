@@ -1,52 +1,24 @@
-
-I denna mapp placeras css-dokument.
-
-/*Mobil*/
-
-/* Hemsida*/
-
-/* Sida1*/
-
-/* Sida2*/
-
-/* Sida3*/
-
-
-/*Helskärm(Dator)*/
-
-/* Hemsida*/
-
-/* Sida1*/
-
-/* Sida1*/
-
-/* Sida2*/
-
-/* Sida3*/
-
-
-/*body,ul{
-    margin: 0;
-}
-*/
-
-
-
-body{
-    background-color: white
-    margin: 50px;
-}
-
 .menu{
     height: 100vh;
     width: 80vw;
-    background: black;
+    background: hotpink;
     position: fixed;
     top: 0;
     left: -90vw;
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+}
+
+
+.menu-botton{
+    cursor: pointer;
+    display: inline;
+
+}
+
+.menu-botton i.material-icons{
+    font-size: 3rem;
 }
 
 .show{
@@ -64,393 +36,287 @@ body{
     z-index: 5;
 }
 
-.menu-botton{
-    cursor: pointer;
-    display: inline;
-}
-
-.menu-botton i.material-icons{
-    font-size: 2.5rem;
-}
-
 .fade-layer.visible{
     display: block;
 }
 
 
-/*desktop*/
-@media screen and (min-width: 1024px) {
-    
-main{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd"
-    "nv nv"
-    "ac ac"
-    "ft ft"
-    ;
-}
 
-
-#hd{
-    grid-area: hd;
-    background-color:black;
-    display: flex; align-items: center; 
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: column
-}
-
-#nv{
-    grid-area: nv;
-    background-color:palevioletred;
-    display: flex; align-items: center; 
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: column;
-}
-
-#ac{
-    grid-area: ac;
-    background-color:hotpink;
-}
-
-#ft{
-    grid-area: ft;
-    background-color:lightpink;
-    display: flex; align-items: center; 
-    justify-items: center;
-    flex-direction: column;
-}
-
-  #body #karta{
-      width: 1rem;
-  }          
-  #Logga{
-    width: 1rem;
-    }
-  #body #makerspaceb{
-    width: 20rem;
-  }
-
-  #body #instagram{
-    width: 1rem;
-  }
-    
-  #body #facebook{
-    width: 1px;
-  }
-
-  #body p{
-    margin: 0;
-    color: white;
-    padding: 50px;
-} 
-}
-
-
-
-
-/* telefon */
-@media screen and (max-width: 1024px){
-
-.menu-botton{
-    position: fixed;
-    top: 0;
-    left: 10;
-    right: 15;
-    bottom: 0;
-    background-color:white;
-    display: none;
-    z-index: 5;
-}
-
-.menu-botton{
-    display: block;
-}
-
-.wrapper{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd"
-    "nv nv"
-    "ac ac"
-    "ft ft"
-    ;
-}
-
-#hd{
-    grid-area: hd;
-    display: flex; align-items: center; 
-    justify-items: center;
-    flex-direction: column;
-}
-
-#nv{
-    grid-area: nv;
-    display: flex; align-items: center; 
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: column;
-}
-
-#ac{
-    grid-area: ac;
-    background-color: black;
-}
-
-
-#ft{
-    grid-area: ft;
-    background-color:white;
-    display: flex; align-items: center; 
-    justify-items: center;
-    flex-direction: column;
-}
-
-
-#body #karta{
-    width: 1rem;
-}
-
-#body #Logga{
-    width: 1rem;
-}
-
-#body #makerspaceb{
-    width: 200rem;
-  }
-
-#body #instagram{
-    width: 1px;
-    height: 1px;
-  }
-    
-#body #facebook{
-    width: 10px;
-  }
-
-
-#body p{
-margin: 0;
-color: white;
-padding: 50px;
-}
-
-}
-
-
-
-
-
-
-
-
-/* body2*/
-
-#body2{
-    background-color: white
+/*BODY1*/
+#body1{
+    background-color: lightskyblue;
     margin: 50px;
-}
-
-.menu{
-    height: 100vh;
-    width: 80vw;
-    background: black;
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.show{
-    left: 0vw;
+/*desktop BODY1*/
+
+@media screen and (min-width: 1024px){       
+#body1 .main{  
+    padding-left: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "hd hd hd hd"
+        "nv nv nv nv"
+        "ac ac ac ac"
+        "ft ft ft ft"
+        ;
 }
-
-.fade-layer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 5;
-}
-
-.menu-botton{
-    cursor: pointer;
-    display: inline;
-}
-
-.menu-botton i.material-icons{
-    font-size: 2.5rem;
-}
-
-.fade-layer.visible{
-    display: block;
-}
-
-
-/*desktop*/
-@media screen and (min-width: 1024px) {
     
-main{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd"
-    "nv nv"
-    "ac ac"
-    "sc sc"
-    "ft ft"
-    ;
-}
-
-
-#body2 #hd{
+    
+#body1 header#hd{
     grid-area: hd;
-    background-color:black;
-    color: pink; 
+    display: flex; align-items: center;
+    flex-direction: column;
 }
-
-#body2 #nv{
-    grid-area: nv;
-    background-color:palevioletred;
-}
-
-#body2 #ac{
-    grid-area: ac;
-    background-color:hotpink;
-
-    background-image: url(..img/MSLogga.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#body2 #sc{
-    grid-area: sc;
-    background-color:hotpink;
-    background-image: url(..img/makerspaceb.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-    
-
-#body2 #ft{
-    grid-area: ft;
-    background-color:lightpink;
-}
-
  
-#Logga{
-    width: 1rem;
-}
-#makerspaceb{
-    width: 20rem;
-  }
-
-#instagram{
-    width: 1rem;
-  }
-    
-#facebook{
-    width: 1rem;
-  }
-
-#body2 #p{
+#body1 nav#nv{    
+    grid-area: nv;
+    background-color: black;
+    padding: 20px;
+    border: 4.5px solid hotpink;
     margin: 0;
-    color: white;
-    padding: 50px;
-    }   
+    display: flex; align-items: center;
+    flex-direction: column;
+}
+ 
+#body1 article#ac{
+    grid: ac;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:pink;
+}
+ 
+#body1 article#ac section{
+    grid-area: ac;
+    width: 40%;
+    padding: 15px;
+    margin: 2px;
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+    background-color:paleturquoise;
+ /*
+    #ac{
+        grid-area: ac;
+        background-color:hotpink;
+        display: flex; align-items: center;
+        flex-direction: column;
+   
+    }
+   
+    #box article:nth-child(1) {
+        background-color:lightblue;
+        order: 2;
+     
+      }
+      #box article:nth-child(2) {
+        background-color:lightgreen;
+        order: 3;
+      }
+      #part-brown article:nth-child(3) {
+        background-color:yellow;
+        order: 1;
+      }
+      */
+   
+}
+ 
+#body1 section#sc{
+    grid-area: sc;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+ 
+#body1 footer#ft{
+    grid-area: ft;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
+}
+ 
+ 
+#body1 footer#ft section{
+    grid-area: ft;
+    flex-direction: column;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    padding: 3.5rem;
+    margin: 1.5rem;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+#body1 .Logga{
+    width: 10rem;
+}
+ 
+#body1 #makerspaceb{
+    width: 20rem;
+}
+ 
+#body1 #sy{
+    height: 10rem;
+    width: 11rem;
+}
+ 
+#body #ps{
+    height: 10rem;
+    width: 11rem;
+}
+ 
+#body1 #robot{
+    height: 10rem;
+    width: 11rem;
+}
+ 
+#body1 .instagram{
+    width: 5rem;
+}
+   
+#body1 .facebook{
+    width: 5rem;
+}
+ 
+#body1 .map{
+    width: 5rem;
+}
 } 
 
 
+   
 
+/* telefon BODY1*/
+@media screen and (max-width: 1024px){    
 
-
-
-/* telefon */
-@media screen and (max-width: 1024px){
-
-.menu-botton{
-    position: fixed;
-    top: 0;
-    left: 10;
-    right: 15;
-    bottom: 0;
-    background-color:white;
-    display: none;
-    z-index: 5;
+#body1 .wrapper{  
+    padding-left: 55px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "hd hd hd hd"
+        "nv nv nv nv"
+        "ac ac ac ac"
+        "ft ft ft ft"
+        ;
 }
-
+ 
 .menu-botton{
     display: block;
 }
 
-.wrapper{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd"
-    "nv nv"
-    "ac ac"
-    "ft ft"
-    ;
-}
 
-#body2 #hd{
+#body1 header#hd{
     grid-area: hd;
-    background-color:black;
+    display: flex; align-items: center;
+    flex-direction: column;
 }
-
-#body2 #nv{
+ 
+#body1 nav#nv{
     grid-area: nv;
+    background-color: black;
+    padding: 20px;
+    border: 4.5px solid hotpink;
+    margin: 0;
+    display: flex; align-items: center;
+    flex-direction: column;
+}
+ 
+ 
+#body1 article#ac{
+    grid: ac;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:pink;
+}
+ 
+ 
+#body1 article#ac section{
+    grid-area: ac;
+    width: 40%;
+    padding: 15px;
+    margin: 2px;
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
     background-color:paleturquoise;
 }
-
-#body2 #ac{
-    grid-area: ac;
-    background-color:lightcyan;
-
-    background-image: url(..img/makerspaceb.png));
-    background-size: cover;
-    background-repeat: no-repeat;
+ 
+ 
+ 
+#body1 section#sc{
+    grid-area: sc;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
 }
-
-#body2 #ft{
+ 
+ 
+ 
+#body1 footer#ft{
     grid-area: ft;
-    background-color:black;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
 }
-
-
-#body2 p{
-margin: 0;
-color: white;
-padding: 50px;
+ 
+ 
+#body1 footer#ft section{
+    grid-area: ft;
+    flex-direction: column;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    padding: 3.5rem;
+    margin: 1.5rem;
+    font-family: 'Sigmar One', cursive;
 }
-
-
-#Logga{
-    width: 1rem;
+ 
+ 
+#body1 .Logga{
+    width: 10rem;
 }
-#makerspaceb{
+ 
+#body1 #makerspaceb{
     width: 20rem;
-  }
-
-#instagram{
-    width: 3rem;
-  }
-    
-#facebook{
-    width: 3rem;
-  }
+}
+ 
+#body1 #sy{
+    height: 10rem;
+    width: 11rem;
+}
+ 
+#body1 #ps{
+    height: 10rem;
+    width: 11rem;
+}
+  
+#body1 #robot{
+    height: 10rem;
+    width: 11rem;
+}
+ 
+#body1 .instagram{
+    width: 5rem;
+}
+   
+#body1 .facebook{
+    width: 5rem;
+}
+ 
+#body1 .map{
+    width: 5rem;
+}
 
 }
 
@@ -459,220 +325,652 @@ padding: 50px;
 
 
 
-
-
-
-
-
-
-
-
-/* body3*/
-
-#body3{
-    background-color: lightskyblue
+ 
+ 
+/* body2*/
+#body2{
+    background-color: white;
     margin: 50px;
-    background-image: url(..img/MSLogga.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu{
-    height: 100vh;
-    width: 80vw;
-    background: turquoise;
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
+ /*desktop BODY2*/
+@media screen and (min-width: 1024px) {
+#body1 .main{  
+        padding-left: 150px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+            "hd hd hd hd"
+            "nv nv nv nv"
+            "ac ac ac ac"
+            "ft ft ft ft"
+            ;
+    }
+        
+
+#body2 header#hd2{
+    grid-area: hd;
+    display: flex; align-items: center;
+    flex-direction: column;
 }
-
-
-.show{
-    left: 0vw;
+ 
+#body2 nav#nv2{
+    grid-area: nv;
+    background-color:black;
+    font-family: 'Sigmar One', cursive;
+    display: flex; align-items: center;
+    flex-direction: column;
+    background-image: url(..img/sl3.png);
 }
-
-.fade-layer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 5;
+ 
+ 
+#body2 article#ac2{
+    grid-area: ac;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    font-family: 'Sigmar One', cursive;
+    background-color: lightgray;
 }
-
+ 
+#body2 section#sc2 {
+    grid: ac;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightgray;
+}
+ 
+ 
+#body2 footer#ft2 section{
+    grid-area: sc;
+    flex-direction: column;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    padding: 3.5rem;
+    margin: 1.5rem;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+#body2 footer#ft2{
+    grid-area: ft;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
+}
+ 
+ 
+#body2 .m{
+    margin: 20;
+    color: white;
+    padding: 50px;
+    }
+ 
+#body2 .t{
+    margin: 100px;
+    color: white;
+}
+ 
+#body2 .l{
+    margin: 50px;
+}
+ 
+#m2{
+    width: 30rem;
+}
+ 
+#mk3s{
+    width: 13rem;
+}
+ 
+#sl3{
+    width: 10rem;
+}
+ 
+#tryck{
+    height: 20rem;
+    width: 15rem;
+}
+ 
+ 
+#vinyl{
+    width: 14rem;
+    height: 15rem;
+}
+ 
+#laser{
+    width: 12rem;
+    height: 15rem;
+}
+ 
+ 
+#verk{
+    height: 15rem;
+    width: 12rem;
+}
+ 
+#pro{
+    height: 15rem;
+    width: 12rem;
+}
+ 
+.Logga{
+    width: 10rem;
+}
+ 
+.instagram{
+    width: 5rem;
+}
+   
+.facebook{
+    width: 5rem;
+}
+ 
+.map{
+    width: 5rem;
+}
+ 
+}
+ 
+ 
+ 
+ 
+ 
+/* telefon BODY2*/
+@media screen and (max-width: 1024px){
+ 
+#body2 .wrapper{  
+        padding-left: 55px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "hd hd hd hd"
+            "nv nv nv nv"
+            "ac ac ac ac"
+            "ft ft ft ft"
+            ;
+}
+ 
+ 
 .menu-botton{
-    cursor: pointer;
-    display: inline;
-}
-
-.menu-botton i.material-icons{
-    font-size: 2.5rem;
-}
-
-.fade-layer.visible{
     display: block;
 }
 
+#body2 header#hd2{
+    grid-area: hd;
+    display: flex; align-items: center;
+    flex-direction: column;
+}
+ 
+#body2 nav#nv2{
+    grid-area: nv;
+    background-color:black;
+    font-family: 'Sigmar One', cursive;
+    display: flex; align-items: center;
+    flex-direction: column;
+    background-image: url(..img/sl3.png);
+}
+ 
+ 
+#body2 article#ac2{
+    grid-area: ac;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    font-family: 'Sigmar One', cursive;
+    background-color: lightgray;
+}
+ 
+#body2 section#sc2 {
+    grid: ac;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightgray;
+}
+ 
+ 
+#body2 footer#ft2 section{
+    grid-area: sc;
+    flex-direction: column;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    padding: 3.5rem;
+    margin: 1.5rem;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+#body2 footer#ft2{
+    grid-area: ft;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
+}
+ 
+ 
+#body2 .m{
+    margin: 20;
+    color: white;
+    padding: 50px;
+    }
+ 
+#body2 .t{
+    margin: 100px;
+    color: white;
+}
+ 
+#body2 .l{
+    margin: 50px;
+}
+ 
+#m2{
+    width: 30rem;
+}
+ 
+#mk3s{
+    width: 13rem;
+}
+ 
+#sl3{
+    width: 10rem;
+}
+ 
+#tryck{
+    height: 20rem;
+    width: 15rem;
+}
+ 
+ 
+#vinyl{
+    width: 14rem;
+    height: 15rem;
+}
+ 
+#laser{
+    width: 12rem;
+    height: 15rem;
+}
+ 
+ 
+#verk{
+    height: 15rem;
+    width: 12rem;
+}
+ 
+#pro{
+    height: 15rem;
+    width: 12rem;
+}
+ 
+.Logga{
+    width: 10rem;
+}
+ 
+.instagram{
+    width: 5rem;
+}
+   
+.facebook{
+    width: 5rem;
+}
+ 
+.map{
+    width: 5rem;
+}
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* body3*/
+#body3{
+    background-color: white;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/*desktop*/
+/*desktop body3*/
 @media screen and (min-width: 1024px) {
-    
-main{
+#body3 main{
     display:grid;
     grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd"
-    "nv nv"
-    "ac ac"
-    "ft ft"
+    grid-template-areas:
+    "hd hd hd hd"
+    "nv nv nv nv"
+    "ac ac ac ac"
+    "ft ft ft ft"
     ;
 }
-
-
-#body3 #hd{
+  
+#body3 #hd3{
     grid-area: hd;
-    background-color:black;
-    color: pink; 
+    color: pink;
 }
-
-#body3 #nv{
+ 
+#body3 #nv3{
     grid-area: nv;
     background-color:palevioletred;
 }
-
-#body3 #ac{
+ 
+#body3 #ac3{
     grid-area: ac;
     background-color:hotpink;
-
+ 
 }
-
-#body3 #ft{
+ 
+#body3 #ft3{
     grid-area: ft;
     background-color:lightpink;
-
-    
     background-image: url(..img/kartaicon.png));
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Sigmar One', cursive;
+    background-color: darkgrey;
 }
-
-
-
-#Logga{
-    width: 1rem;
-}
-#makerspaceb{
-    width: 200rem;
-  }
-
-  
-#instagram{
-    width: 3rem;
-  }
-    
-#facebook{
-    width: 3rem;
-  }
-
-#karta{
-    width: 3rem;
-}
-#body3 #p{
+ 
+ 
+#body3 .m{
     margin: 0;
     color: white;
     padding: 50px;
     }
-
-  
-} 
-
-
-
-
-
-
+     
+    .Logga{
+        width: 50rem;
+    }
+ 
+    .instagram{
+        width: 5rem;
+    }
+       
+    .facebook{
+        width: 5rem;
+    }
+ 
+    .map{
+        width: 5rem;
+    }
+ 
+    }
+ 
+ 
+ 
+ 
+ 
+ 
 /* telefon */
 @media screen and (max-width: 1024px){
-
-.menu-botton{
-    position: fixed;
-    top: 0;
-    left: 10;
-    right: 15;
-    bottom: 0;
-    background-color:white;
-    display: none;
-    z-index: 5;
-}
-
-.menu-botton{
-    display: block;
-}
-
 .wrapper{
+        padding-left: 40px;
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "hd hd"
+        "nv nv"
+        "sc sc"
+        "ac ac"
+        "ft ft"
+        ;
+    }
+ 
+ 
+#body3 header#hd3{
+    grid-area: hd;
+    background-image: url(..img/MSLogga.png);
+    display: flex; align-items: center;
+    flex-direction: column;
+}
+ 
+#body3 nav#nv3{
+    grid-area: nv;
+    background-color:paleturquoise;
+    display: flex; align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+ 
+ 
+#body3 article#ac3{
+    grid-area: sc;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+#body3 section#sc3{
+    grid-area: ac;
+    background-color:lightcyan;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+ 
+}
+ 
+#body3 footer#ft3{
+    grid-area: ft;
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
+}
+ 
+#body3 footer#ft3 section{
+    grid-area: sc;
+    flex-direction: column;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    padding: 3.5rem;
+    margin: 1.5rem;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+#body3 .m{
+margin: 30;
+padding: 5px;
+}
+ 
+.Logga{
+    width: 10rem;
+}
+ 
+.instagram{
+    width: 5rem;
+}
+   
+.facebook{
+    width: 5rem;
+}
+ 
+.map{
+    width: 5rem;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+  
+/* body4*/
+#body4{
+    background-color: white;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* DESKTOP body4*/   
+@media screen and (min-width: 1024px){  
+#body1 .main{  
+    padding-left: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "hd hd hd hd"
+        "nv nv nv nv"
+        "ac ac ac ac"
+        "ft ft ft ft"
+        ;
+}
+    
+#body4 header#hd4{
+    grid-area: hd;
+    color: pink;
+}
+ 
+#body4 #nv4{
+    grid-area: nv;
+    background-color:palevioletred;
+}
+ 
+#body4 #ac4{
+    grid-area: ac;
+    background-color:hotpink;
+ 
+}
+ 
+#body4 #ft4{
+    grid-area: ft;
+    background-color:lightpink;
+    background-image: url(..img/kartaicon.png));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sigmar One', cursive;
+    background-color: darkgrey;
+}
+ 
+ 
+#body4 .m{
+    margin: 0;
+    color: white;
+    padding: 50px;
+    }
+     
+    .Logga{
+        width: 50rem;
+    }
+ 
+    .instagram{
+        width: 5rem;
+    }
+       
+    .facebook{
+        width: 5rem;
+    }
+ 
+    .map{
+        width: 5rem;
+    }
+ 
+}
+ 
+ 
+ 
+/* body4 telefon */
+@media screen and (max-width: 1024px){
+#body54 .wrapper{
+    padding-left: 40px;
     display:grid;
     grid-template-columns: auto;
-    grid-template-areas: 
+    grid-template-areas:
     "hd hd"
     "nv nv"
+    "sc sc"
     "ac ac"
     "ft ft"
     ;
 }
-
-#body3 #hd{
+ 
+#body4 #hd4{
     grid-area: hd;
-    background-color:black;
-
     background-image: url(..img/nti.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex; align-items: center;
+    flex-direction: column;
 }
-
-#body3 #nv{
+ 
+#body4 #nv4{
     grid-area: nv;
     background-color:paleturquoise;
+    display: flex; align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
 }
-
-#body3 #ac{
+ 
+#body4 #ac4{
     grid-area: ac;
     background-color:lightcyan;
+    display: flex; align-items: center;
+    flex-direction: column;
 }
-
-#body3 #ft{
+ 
+ 
+#body4 #sc4{
+    grid-area: sc;
+    display: flex; align-items: center;
+    background-color:lightblue;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+}
+ 
+ 
+#body4 #ft4{
     grid-area: ft;
-    background-color:rgb(0, 255, 221);
+    display: flex; align-items: center;
+    flex-direction: column;
+    font-family: 'Sigmar One', cursive;
+    background-color:lightcyan;
 }
-
-#Logga{
-    width: 1rem;
+ 
+ 
+#body4 .m{
+margin: 30;
+padding: 5px;
 }
-#makerspaceb{
-    width: 200rem;
-  }
-
-  
-#instagram{
-    width: 3rem;
-  }
-    
-#facebook{
-    width: 3rem;
-  }
-
-#karta{
-    width: 3rem;
+ 
+.Logga{
+    width: 10rem;
 }
-
-#body3 p{
-    margin: 0;
-    color: white;
-    padding: 50px;
-    }
-
+ 
+.instagram{
+    width: 5rem;
 }
+   
+.facebook{
+    width: 5rem;
+}
+ 
+.map{
+    width: 5rem;
+}
+ 
+ 
+}
+ 
+
