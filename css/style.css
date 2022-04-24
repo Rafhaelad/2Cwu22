@@ -669,7 +669,7 @@
  
 #body3 section#sc3{
     grid-area: sc;
-    background-color:lightcyan;
+    background-color:rgb(140, 219, 255);
     display: flex; align-items: center;
     flex-direction: column;
     font-family: 'Sigmar One', cursive;
@@ -680,7 +680,7 @@
     grid-area: ft;
     flex-direction: column;
     display: flex; align-items: center;
-    background-color:lightblue;
+    background-color:white;
     padding: 3.5rem;
     margin: 1.5rem;
     font-family: 'Sigmar One', cursive;
@@ -691,7 +691,7 @@
     display: flex; align-items: center;
     flex-direction: column;
     font-family: 'Sigmar One', cursive;
-    background-color:lightcyan;
+    background-color:darkturquoise;
 }
 
 
@@ -759,7 +759,7 @@
  
 #body3 section#sc3{
     grid-area: sc;
-    background-color:lightcyan;
+    background-color:rgb(140, 219, 255)  ;
     display: flex; align-items: center;
     flex-direction: column;
     font-family: 'Sigmar One', cursive;
@@ -770,7 +770,7 @@
     grid-area: ft;
     flex-direction: column;
     display: flex; align-items: center;
-    background-color:lightblue;
+    background-color:white;
     padding: 3.5rem;
     margin: 1.5rem;
     font-family: 'Sigmar One', cursive;
@@ -781,7 +781,7 @@
     display: flex; align-items: center;
     flex-direction: column;
     font-family: 'Sigmar One', cursive;
-    background-color:lightcyan;
+    background-color:darkturquoise;
 }
 
 #body3 .Logga{
@@ -910,13 +910,14 @@
 
 #body4 .wrapper{
     padding-left: 40px;
-    display:grid;
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 3fr;
     grid-template-areas:
     "hd hd hd hd"
-    "nv nv nv nv"
+    "nv nv ac ac"
+    "nv nv ac ac"
     "sc sc sc sc"
-    "ac ac ac ac"
     "ft ft ft ft"
     ;
 }
@@ -935,7 +936,7 @@
     display: flex; align-items: center;
     justify-items: center;
     flex-direction: column;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Sigmar One', cursive;
     font-size: 1.1rem;
 }
  
